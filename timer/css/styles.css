@@ -1,0 +1,141 @@
+.js-pomodorotracker {
+  margin-top: 100px;
+  min-height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tracker-container {
+  width: 60%;
+  max-width: 1200px;
+  border-radius: 8px;
+  border: 3px solid #2f5050;
+}
+
+.time-settings {
+  width: 100%;
+  height: 100px;
+}
+
+.time-settings form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 30px;
+  color: coral;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.time-settings__work {
+  margin-right: 40px;
+}
+
+.time-settings label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.time-settings input {
+  width: 100px;
+  border: 1px dotted rgba(47, 80, 80, 0.5);
+  margin-right: 10px;
+  font-size: 16px;
+  color: #2f5050;
+}
+
+.timer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: 95px;
+  color: #243333;
+}
+
+.tracker-control {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.tracker-control button {
+  width: 120px;
+  padding: 8px 0;
+  color: coral;
+  font-weight: bold;
+  font-size: 17px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  border: none;
+}
+
+.tracker-control button:not(:last-child) {
+  margin-right: 20px;
+}
+
+.tracker-control button:hover {
+  background-color: rgba(47, 80, 80, 0.8);
+  color: #fcfcfc;
+}
+
+.active {
+  background-color: #2d9259;
+}
+
+@media screen and (min-width: 300px) and (max-width: 850px) {
+  .tracker-container {
+    width: 100%;
+  }
+  .time-settings {
+    width: 100%;
+    height: 100px;
+  }
+  .time-settings form {
+    font-size: 14px;
+  }
+  .time-settings__work {
+    margin-right: 15px;
+  }
+  .time-settings input {
+    width: 70px;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  .timer {
+    font-size: 75px;
+  }
+  .tracker-control {
+    margin-top: 20px;
+  }
+  .tracker-control button {
+    padding: 6px 0;
+    font-size: 15px;
+  }
+  .tracker-control button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
